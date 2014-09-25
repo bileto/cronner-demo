@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ae4f138bf30326896311026cb8bff085",
+    "hash": "4131bc4ba09320e7e00464da289c8cc4",
     "packages": [
         {
             "name": "latte/latte",
@@ -1239,6 +1239,63 @@
             "description": "Nette Utility Classes",
             "homepage": "http://nette.org",
             "time": "2014-08-24 23:28:32"
+        },
+        {
+            "name": "stekycz/cronner",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stekycz/Cronner.git",
+                "reference": "9130d7fe121c5900dfd2a901d0a21a7596a95a2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stekycz/Cronner/zipball/9130d7fe121c5900dfd2a901d0a21a7596a95a2b",
+                "reference": "9130d7fe121c5900dfd2a901d0a21a7596a95a2b",
+                "shasum": ""
+            },
+            "require": {
+                "nette/bootstrap": "~2.2",
+                "nette/di": "~2.2",
+                "nette/reflection": "~2.2",
+                "nette/utils": "~2.2",
+                "php": ">=5.3.3",
+                "tracy/tracy": "~2.2"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "~0.7",
+                "janmarek/mockista": "~1.0",
+                "nette/tester": "~1.2"
+            },
+            "suggest": {
+                "kdyby/console": "Symfony Console integration for Kdyby components",
+                "kdyby/events": "Events for Nette Framework"
+            },
+            "type": "nette-addon",
+            "autoload": {
+                "classmap": [
+                    "Cronner/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Štekl",
+                    "email": "martin.stekl@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple tool which helps with maintenance of cron tasks.",
+            "keywords": [
+                "cron",
+                "manager",
+                "nette",
+                "task"
+            ],
+            "time": "2014-08-19 07:33:34"
         },
         {
             "name": "tracy/tracy",
