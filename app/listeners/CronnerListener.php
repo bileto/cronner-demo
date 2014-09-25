@@ -6,7 +6,7 @@ use Kdyby\Events\Subscriber;
 use Nette\Object;
 use stekycz\Cronner\Cronner;
 use stekycz\Cronner\Tasks\Task;
-use Tracy\Debugger;
+use Nette\Diagnostics\Debugger;
 
 
 

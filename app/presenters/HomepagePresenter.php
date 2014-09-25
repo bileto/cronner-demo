@@ -1,8 +1,5 @@
 <?php
 
-namespace App\Presenters;
-
-use Nette;
 use stekycz\Cronner\Cronner;
 use stekycz\Cronner\Tasks\Task;
 
@@ -13,9 +10,15 @@ class HomepagePresenter extends BasePresenter
 
 	/**
 	 * @var \stekycz\Cronner\Cronner
-	 * @inject
 	 */
-	public $cronner;
+	private $cronner;
+
+
+
+	public function injectCronner(Cronner $cronner)
+	{
+		$this->cronner = $cronner;
+	}
 
 
 

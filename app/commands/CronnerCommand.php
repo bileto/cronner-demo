@@ -15,9 +15,8 @@ class CronnerCommand extends Command
 
 	/**
 	 * @var \stekycz\Cronner\Cronner
-	 * @inject
 	 */
-	public $cronner;
+	private $cronner;
 
 
 
@@ -25,6 +24,14 @@ class CronnerCommand extends Command
 	{
 		$this->setName('cronner:run')
 			->setDescription('Runs all Cronner tasks');
+	}
+
+
+
+	protected function initialize(InputInterface $input, OutputInterface $output)
+	{
+		parent::initialize($input, $output);
+		$this->cronner = $this->getHelper('container')->getByType('stekycz\Cronner\Cronner');
 	}
 
 
