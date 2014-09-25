@@ -17,5 +17,8 @@
 	"require-dev": {
 		"nette/tester": "~1.0"
 	},
+	"autoload": {
+		"classmap": [ "app/", "libs/" ]
+	},
 	"minimum-stability": "dev"
 }
