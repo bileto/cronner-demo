@@ -37,4 +37,5 @@ events:
 		- Listeners\CronnerListener
 
 services:
-	router: App\RouterFactory()::createRouter
+	- App\RouterFactory
+	router: @App\RouterFactory::createRouter
