@@ -1,18 +1,8 @@
 {
-	"name": "stekycz/nette-sandbox",
-	"description": "The sandbox is a pre-packaged Nette Framework project, basic configured structure for your application.",
-	"homepage": "http://nette.org",
+	"name": "stekycz/cronner-demo",
 	"type": "project",
-	"license": ["Unlicense"],
+	"license": ["MIT"],
 	"authors": [
-		{
-			"name": "David Grudl",
-			"homepage": "http://davidgrudl.com"
-		},
-		{
-			"name": "Nette Community",
-			"homepage": "http://nette.org/contributors"
-		},
 		{
 			"name": "Martin Štekl",
 			"email": "martin.stekl@gmail.com"
@@ -27,10 +17,5 @@
 	"require-dev": {
 		"nette/tester": "~1.0"
 	},
-	"minimum-stability": "dev",
-	"extra": {
-		"branch-alias": {
-			"dev-master": "2.3-dev"
-		}
-	}
+	"minimum-stability": "dev"
 }
