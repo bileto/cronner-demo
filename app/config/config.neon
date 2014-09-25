@@ -13,6 +13,7 @@ php:
 extensions:
 	cronner: stekycz\Cronner\DI\CronnerExtension
 	console: Kdyby\Console\DI\ConsoleExtension
+	events: Kdyby\Events\DI\EventsExtension
 
 nette:
 	application:
@@ -26,6 +27,10 @@ nette:
 console:
 	commands:
 		- Commands\CronnerCommand
+
+events:
+	subscribers:
+		- Listeners\CronnerListener
 
 services:
 	router: App\RouterFactory()::createRouter
