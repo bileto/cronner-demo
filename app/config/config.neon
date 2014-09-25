@@ -10,6 +10,8 @@ parameters:
 php:
 	date.timezone: Europe/Prague
 
+extensions:
+	cronner: stekycz\Cronner\DI\CronnerExtension
 
 nette:
 	application:
