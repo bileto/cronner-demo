@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e1ffb0f551c0ad226bef2ec0a9134125",
+    "hash": "2207441b26ab3a68d6f283b4e938390e",
     "packages": [
         {
             "name": "kdyby/console",
@@ -1403,16 +1403,16 @@
         },
         {
             "name": "stekycz/cronner",
-            "version": "v1.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stekycz/Cronner.git",
-                "reference": "9130d7fe121c5900dfd2a901d0a21a7596a95a2b"
+                "reference": "422d1c74c45fc60989b270bc3ee34b322955b1aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stekycz/Cronner/zipball/9130d7fe121c5900dfd2a901d0a21a7596a95a2b",
-                "reference": "9130d7fe121c5900dfd2a901d0a21a7596a95a2b",
+                "url": "https://api.github.com/repos/stekycz/Cronner/zipball/422d1c74c45fc60989b270bc3ee34b322955b1aa",
+                "reference": "422d1c74c45fc60989b270bc3ee34b322955b1aa",
                 "shasum": ""
             },
             "require": {
@@ -1456,7 +1456,7 @@
                 "nette",
                 "task"
             ],
-            "time": "2014-08-19 07:33:34"
+            "time": "2014-09-25 19:46:02"
         },
         {
             "name": "symfony/console",
@@ -1636,7 +1636,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nette/nette": 20
+        "nette/nette": 20,
+        "stekycz/cronner": 20,
+        "kdyby/console": 20,
+        "kdyby/events": 20
     },
     "prefer-stable": false,
     "platform": {
