@@ -3,10 +3,10 @@
 namespace Listeners;
 
 use Kdyby\Events\Subscriber;
+use Nette\Diagnostics\Debugger;
 use Nette\Object;
 use stekycz\Cronner\Cronner;
 use stekycz\Cronner\Tasks\Task;
-use Tracy\Debugger;
 
 
 
