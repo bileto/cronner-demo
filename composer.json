@@ -10,10 +10,10 @@
 	],
 	"require": {
 		"php": ">= 5.3.7",
-		"nette/nette": "~2.2@dev",
+		"nette/nette": "@dev",
 		"stekycz/cronner": "@dev",
-		"kdyby/console": "~2.3@dev",
-		"kdyby/events": "~2.2@dev"
+		"kdyby/console": "@dev",
+		"kdyby/events": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "~1.0"
