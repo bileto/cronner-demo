@@ -1,5 +1,9 @@
 <?php
 
+use Kdyby\Console\DI\ConsoleExtension;
+use Kdyby\Events\DI\EventsExtension;
+use stekycz\Cronner\DI\CronnerExtension;
+
 require __DIR__ . '/../vendor/autoload.php';
 
 $configurator = new Nette\Configurator;
@@ -15,6 +19,10 @@ if ($configurator->isDebugMode()) {
 		->addDirectory(__DIR__ . '/../libs')
 		->register();
 }
+
+CronnerExtension::register($configurator);
+ConsoleExtension::register($configurator);
+EventsExtension::register($configurator);
 
 $configurator->addConfig(__DIR__ . '/config/config.neon');
 $configurator->addConfig(__DIR__ . '/config/config.local.neon');
