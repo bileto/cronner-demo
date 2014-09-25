@@ -4,37 +4,36 @@
 # If you don't protect this directory from direct web access, anybody will be able to see your passwords.
 # http://nette.org/security-warning
 #
-parameters:
+common:
+	parameters:
 
 
-php:
-	date.timezone: Europe/Prague
+	php:
+		date.timezone: Europe/Prague
 
-extensions:
-	cronner: stekycz\Cronner\DI\CronnerExtension
-	console: Kdyby\Console\DI\ConsoleExtension
-	events: Kdyby\Events\DI\EventsExtension
+	nette:
+		application:
+			errorPresenter: Error
 
-nette:
-	application:
-		errorPresenter: Error
-		mapping:
-			*: App\*Module\Presenters\*Presenter
+		session:
+			expiration: 14 days
 
-	session:
-		expiration: 14 days
+	cronner:
+		tasks:
+			- CronnerTasks\DummyTasks
 
-cronner:
-	tasks:
-		- CronnerTasks\DummyTasks
+	console:
+		commands:
+			- Commands\CronnerCommand
 
-console:
-	commands:
-		- Commands\CronnerCommand
+	events:
+		subscribers:
+			- Listeners\CronnerListener
 
-events:
-	subscribers:
-		- Listeners\CronnerListener
+	services:
+		routerFactory: App\RouterFactory
+		router: @routerFactory::createRouter
 
-services:
-	router: App\RouterFactory()::createRouter
+production < common:
+
+development < common:
