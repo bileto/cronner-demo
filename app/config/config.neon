@@ -12,6 +12,7 @@ php:
 
 extensions:
 	cronner: stekycz\Cronner\DI\CronnerExtension
+	console: Kdyby\Console\DI\ConsoleExtension
 
 nette:
 	application:
@@ -22,6 +23,9 @@ nette:
 	session:
 		expiration: 14 days
 
+console:
+	commands:
+		- Commands\CronnerCommand
 
 services:
 	router: App\RouterFactory()::createRouter

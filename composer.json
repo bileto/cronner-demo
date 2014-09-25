@@ -21,7 +21,8 @@
 	"require": {
 		"php": ">= 5.3.7",
 		"nette/nette": "~2.2@dev",
-		"stekycz/cronner": "~1.0"
+		"stekycz/cronner": "~1.0",
+		"kdyby/console": "~2.3"
 	},
 	"require-dev": {
 		"nette/tester": "~1.0"
