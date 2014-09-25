@@ -2,7 +2,6 @@
 
 namespace Commands;
 
-use CronnerTasks\DummyTasks;
 use stekycz\Cronner\Cronner;
 use stekycz\Cronner\Tasks\Task;
 use Symfony\Component\Console\Command\Command;
@@ -38,7 +37,6 @@ class CronnerCommand extends Command
 		$this->cronner->onTaskError[] = function (Cronner $cronner, \Exception $exception, Task $task) use ($output) {
 			$output->writeln('<error>Task "' . $task->getName() . '" has been stoped by an error: ' . $exception->getMessage() . '</error>');
 		};
-		$this->cronner->addTasks(new DummyTasks());
 		$this->cronner->run();
 		$output->writeln('<info>Cronner finished</info>');
 

@@ -24,6 +24,10 @@ nette:
 	session:
 		expiration: 14 days
 
+cronner:
+	tasks:
+		- CronnerTasks\DummyTasks
+
 console:
 	commands:
 		- Commands\CronnerCommand
